@@ -199,8 +199,22 @@ a {
     }
     .strategic-plan-appdev [class^="col-"] {
         flex-basis: calc(100%);
-        padding: 0;
-        margin: 0 auto;
+    }
+
+    .planning-img-1 {
+        padding: 70px 30px 90px 0;
+        width: 450px;
+    }
+
+    .strategic-plan-appdev .small-card {
+        border-radius: 35px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .planning-img-2 {
+        width: 300px;
+        margin: 0 56px;
     }
 
 }
