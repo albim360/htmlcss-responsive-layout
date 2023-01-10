@@ -43,8 +43,13 @@ a {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
+}
+
+.hero .row {
+    gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .space-between {
@@ -53,12 +58,20 @@ a {
 
 /* COLUMN */
 
+.hero .col-3 {
+    flex-basis: calc(100%/3 - 41px / 3);
+}
+
+.hero .col-2 {
+    flex-basis: calc(100%*2/3 - 18px);
+}
+
 .col-3 {
     flex-basis: calc(100%/3);
 }
 
 .col-2 {
-    flex-basis: calc(100%*2/3);
+    flex-basis: calc(100%/2);
 }
 
 /* BUTTONS */
@@ -111,8 +124,14 @@ a {
     background-color: var(--lightblue);
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid #333333;
     min-height: 200px;
+}
+
+/* STRATEGIC PLAN APP DEV */
+
+.strategic-plan-appdev {
+    background-color: rgb(151,146,228);
+    min-height: 600px; /* DEBUG RULE */
 }
 
 /* MEDIAUERY HERO */
