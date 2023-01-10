@@ -112,6 +112,24 @@ a {
     color: white;
 }
 
+.black {
+    color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+/* TEXT STYLE */
+
+.em {
+    font-style: oblique;
+}
+
+.txt-center {
+    text-align: center;
+}
+
 /* MEDIAUERY HEADER */
 
 @media only screen and (max-width: 991px) {
@@ -141,7 +159,36 @@ a {
 }
 
 .planning-img-1 {
-    padding: 0 30px 90px 0;
+    padding: 70px 30px 90px 0;
+    width: 500px;
+}
+.strategic-plan-appdev h1.white {
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+
+.strategic-plan-appdev p {
+    padding-bottom: 70px;
+    font-size: 21px;
+}
+
+.strategic-plan-appdev .small-card {
+    border-radius: 35px;
+    margin-top: 250px;
+    margin-bottom: 115px;
+}
+
+.strategic-plan-appdev p.em {
+    font-size: 22px;
+}
+
+.planning-img-2 {
+    width: 350px;
+    margin: 0 110px;
+}
+
+.strategic-plan-appdev h2 {
+    font-size: 29px;
 }
 
 /* MEDIA */
@@ -152,6 +199,8 @@ a {
     }
     .strategic-plan-appdev [class^="col-"] {
         flex-basis: calc(100%);
+        padding: 0;
+        margin: 0 auto;
     }
 
 }
