@@ -66,6 +66,10 @@ a {
     flex-basis: calc(100%*2/3 - 18px);
 }
 
+.col-1 {
+    flex-basis: 100%;
+}
+
 .col-3 {
     flex-basis: calc(100%/3);
 }
@@ -116,9 +120,18 @@ a {
     color: black;
 }
 
+.light-purple {
+    color: rgb(151,146,228);
+}
+
 .bg-white {
     background-color: white;
 }
+
+.bg-light-purple {
+    background-color: rgb(151,146,228);
+}
+
 
 /* TEXT STYLE */
 
@@ -191,6 +204,40 @@ a {
     font-size: 29px;
 }
 
+/* TESTIMONIALS */
+
+.testimonials {
+    min-height: 600px; /* DEBUG RULE */
+
+}
+
+.title-testimonials {
+    font-size: 30px;
+}
+
+.testimonials .row {
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 80px;
+    gap: 30px;
+}
+
+.testimonials h2.light-purple {
+    font-size: 60px;
+    margin: 40px 0;
+}
+
+.p-testimonials-sup {
+    text-align: center;
+    font-size: 20px;
+}
+
+.testimonials div.col-1 {
+    min-height: 175px; /* DEBUG RULE */
+    padding: 40px;
+    border-radius: 25px;
+}
+
 /* MEDIA */
 
 @media only screen and (max-width: 575px) {
@@ -203,7 +250,7 @@ a {
 
     .planning-img-1 {
         padding: 70px 30px 90px 0;
-        width: 450px;
+        width: 441px;
     }
 
     .strategic-plan-appdev .small-card {
