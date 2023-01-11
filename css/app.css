@@ -314,10 +314,10 @@ section.benefits {
     .testimonials h2.light-purple {
         text-align: center;
         font-size: 50px;
-
+    }
 
     /* BENEFITS */
-    .benefits [class^="col-"] {
+    .benefits [class^="col-"]{
         flex-basis: 100%;
     }
 
