@@ -55,6 +55,8 @@ a {
     gap: 16px;
     padding-top: 40px;
     padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
 }
 
 .space-between {
@@ -129,6 +131,11 @@ a {
     color: rgb(214,208,247);
 }
 
+.black-grey {
+    color: rgb(51, 51, 51);
+}
+
+
 .yellow {
     color: rgb(255, 195, 68);
 }
@@ -139,6 +146,14 @@ a {
 
 .light-purple {
     color: rgb(151,146,228);
+}
+
+.light-blue {
+    color: rgb(0, 120, 255);
+}
+
+.bg-light-blue {
+    background-color: rgb(0, 120, 255);
 }
 
 .bg-white {
@@ -168,6 +183,10 @@ a {
     text-decoration: underline;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 /* MEDIAUERY HEADER */
 
 @media only screen and (max-width: 991px) {
@@ -187,6 +206,23 @@ a {
     padding: 20px;
     border-radius: 20px;
     min-height: 200px;
+}
+
+.button-app-store {
+    padding: 15px 46px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.title-hero-card {
+    text-align: center;
+}
+
+.icon-card-hero {
+    text-align: center;
+    width: 325px;
+    font-size: 87px;
 }
 
 /* STRATEGIC PLAN APP DEV */
@@ -432,6 +468,15 @@ section.benefits {
     .about-us .container {
         margin-left: 15px;
     }
+    
+    .get-started h1.yellow {
+        font-size: 50px;
+    }
+
+    .get-started h2.white {
+        font-size: 35px;
+    }
+    
 
 }
 
