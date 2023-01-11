@@ -260,6 +260,27 @@ section.benefits {
     min-height: 120px; /* DEBUG RULE */
 }
 
+/* ABOUT US */
+
+.about-us {
+    padding-bottom: 90px;
+}
+
+.about-us h1.light-purple {
+    font-size: 53px;
+    padding-bottom: 33px;
+    padding-top: 33px;
+}
+
+.about-us [class^="about-us-"] {
+    font-size: 20px;
+}
+
+.about-us-top {
+    padding-bottom: 22px;
+}
+
+
 /* MEDIA */
 
 @media only screen and (max-width: 575px) {
