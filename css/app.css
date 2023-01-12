@@ -32,6 +32,10 @@ a {
     color: currentColor;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /* CONTAINER */
 
 .container {
@@ -55,7 +59,6 @@ a {
     gap: 16px;
     padding-top: 40px;
     padding-bottom: 80px;
-    align-items: center;
     justify-content: center;
 }
 
@@ -83,16 +86,6 @@ a {
 
 .col-2 {
     flex-basis: calc(100%/2);
-}
-
-/* BUTTONS */
-
-.button {
-
-}
-
-.button--white {
-
 }
 
 /* HEADER */
@@ -205,7 +198,9 @@ a {
     background-color: var(--lightblue);
     padding: 20px;
     border-radius: 20px;
-    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    min-height: 365px;
 }
 
 .button-app-store {
@@ -215,14 +210,34 @@ a {
     margin-top: 20px;
 }
 
-.title-hero-card {
-    text-align: center;
+.col-3 .title-hero-card {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    align-self: center;
 }
 
 .icon-card-hero {
     text-align: center;
     width: 325px;
     font-size: 87px;
+}
+
+.hero img {
+    align-self: flex-end;
+    width: 264px;
+    height: 260px;
+    margin-bottom: -20px;
+    margin-top: -125px;
+}
+
+.description-card-hero {
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.hero .col-2 .description-card-hero {
+    width: 402px;
 }
 
 /* STRATEGIC PLAN APP DEV */
@@ -277,6 +292,7 @@ a {
 
 .testimonials .row {
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-left: 80px;
     gap: 30px;
@@ -296,6 +312,25 @@ a {
     min-height: 175px; /* DEBUG RULE */
     padding: 40px;
     border-radius: 25px;
+}
+
+p.testimonials-description.white {
+    font-size: 21px;
+
+}
+
+.img-testimonial {
+    width: 190PX;
+    height: 190PX;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left: -20PX;
+    float: left;
+}
+
+.testimonial-name {
+    margin-top: 25px;
+    font-size: 21px;
 }
 
 /* BENEFITS */
@@ -394,6 +429,41 @@ section.benefits {
     .hero [class^="col-"] {
         flex-basis: calc(100%);
     }
+
+    .hero img {
+        height: auto; */
+        width: 275px;
+        height: 314px;
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .title-hero-card {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .icon-card-hero {
+        text-align: center;
+        font-size: 87px;
+    }
+
+    .card {
+        background-color: var(--lightblue);
+        padding: 20px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        min-height: 365px;
+        align-items: center;
+        margin: 10px 20px;
+        width: 372px;
+     }
+
+     .hero .col-2 .description-card-hero {
+        width: 353px;
+    }
+
     /* STRATEGIC PLAN */
     .strategic-plan-appdev [class^="col-"] {
         flex-basis: calc(100%);
