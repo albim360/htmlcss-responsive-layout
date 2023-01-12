@@ -312,10 +312,14 @@ a {
     min-height: 175px; /* DEBUG RULE */
     padding: 40px;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 p.testimonials-description.white {
     font-size: 21px;
+    width: 700px;
 
 }
 
@@ -325,12 +329,13 @@ p.testimonials-description.white {
     border-radius: 50%;
     margin-right: 25px;
     margin-left: -20PX;
-    float: left;
 }
 
 .testimonial-name {
-    margin-top: 25px;
+    margin-top: -22px;
+    margin-left: 194px;
     font-size: 21px;
+    align-self: flex-end;
 }
 
 /* BENEFITS */
@@ -467,6 +472,7 @@ section.benefits {
     /* STRATEGIC PLAN */
     .strategic-plan-appdev [class^="col-"] {
         flex-basis: calc(100%);
+        margin: 10px 20px;
     }
 
     .strategic-plan-appdev div.container {
@@ -496,11 +502,21 @@ section.benefits {
     /* TESTIMONIALS */
     .testimonials div.col-1 {
         flex-basis: 100%;
+        justify-content: center;
+        min-height: 175px;
+        padding: 40px;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px 20px;
+        width: 70%;
     }
 
     .testimonials .row {
         margin: 0;
         padding: 0;
+        
     }
 
     .testimonials h1.light-purple {
@@ -511,6 +527,26 @@ section.benefits {
     .testimonials h2.light-purple {
         text-align: center;
         font-size: 50px;
+    }
+
+    .testimonial-name {
+        margin-top: 14px;
+        margin-bottom: 10px;
+        font-size: 21px;
+        align-self: flex-end;
+        margin-left: 0;
+    }
+
+    p.testimonials-description.white {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .img-testimonial {
+        width: 190PX;
+        height: 190PX;
+        border-radius: 50%;
+        margin: 0 0 10px 0;
     }
 
     /* BENEFITS */
@@ -545,6 +581,16 @@ section.benefits {
 
     .get-started h2.white {
         font-size: 35px;
+    }
+
+    .desc-footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .desc-boot-footer {
+        font-size: 17px;
     }
     
 
