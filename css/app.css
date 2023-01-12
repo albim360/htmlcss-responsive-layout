@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: currentColor;
 }
 
 html {
@@ -34,6 +35,10 @@ a {
 
 .inline-block {
     display: inline-block;
+}
+
+.block {
+    display: block;
 }
 
 /* CONTAINER */
@@ -125,7 +130,7 @@ a {
 }
 
 .black-grey {
-    color: rgb(51, 51, 51);
+    color: rgb(87, 110, 129);
 }
 
 
@@ -206,7 +211,7 @@ a {
 .button-app-store {
     padding: 15px 46px;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 21px;
     margin-top: 20px;
 }
 
@@ -240,6 +245,10 @@ a {
     width: 402px;
 }
 
+.description-card-benefits {
+    font-size: 17px;
+}
+
 /* STRATEGIC PLAN APP DEV */
 
 .strategic-plan-appdev {
@@ -256,19 +265,16 @@ a {
     padding-bottom: 60px;
 }
 
-.strategic-plan-appdev p {
-    padding-bottom: 70px;
-    font-size: 21px;
-}
-
 .strategic-plan-appdev .small-card {
     border-radius: 35px;
     margin-top: 250px;
     margin-bottom: 115px;
+    text-align: center;
 }
 
 .strategic-plan-appdev p.em {
     font-size: 22px;
+    margin-bottom: 27px;
 }
 
 .planning-img-2 {
@@ -278,6 +284,14 @@ a {
 
 .strategic-plan-appdev h2 {
     font-size: 29px;
+}
+
+.arrow-down-developement {
+    text-align: center;
+    padding: 21px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+    font-size: 24px;
 }
 
 /* TESTIMONIALS */
@@ -320,6 +334,7 @@ a {
 p.testimonials-description.white {
     font-size: 21px;
     width: 700px;
+    margin-top: -30px;
 
 }
 
@@ -336,12 +351,13 @@ p.testimonials-description.white {
     margin-left: 194px;
     font-size: 21px;
     align-self: flex-end;
+    margin-top: -30px;
 }
 
 /* BENEFITS */
 
 section.benefits {
-    min-height: 500px; /* DEBUG RULE */
+    min-height: 820px; /* DEBUG RULE */
 }
 .benefits h1.white {
     text-align: center;
@@ -359,6 +375,23 @@ section.benefits {
     flex-basis: calc(100%/3 - 50px / 3);
     border-radius: 25px;
     min-height: 120px; /* DEBUG RULE */
+    padding: 16px;
+}
+
+.number-benefits {
+    font-size: 44px;
+}
+
+.title-card-benefits {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-more-benefits {
+    padding: 15px;
+    border-radius: 26px;
+    margin: 10px 0 7px 6px;
+    font-size: 16px;
 }
 
 /* ABOUT US */
@@ -493,9 +526,13 @@ section.benefits {
         margin-top: 10px;
         margin-bottom: 30px;
     }
+    .strategic-plan-appdev p.em {
+        font-size: 21px;
+        margin-bottom: 27px;
+    }
 
     .planning-img-2 {
-        width: 300px;
+        width: 255px;
         margin: 0 56px;
     }
 
@@ -513,9 +550,14 @@ section.benefits {
         width: 70%;
     }
 
+    .title-testimonials {
+        font-size: 20px;
+    }
+
     .testimonials .row {
         margin: 0;
         padding: 0;
+        gap: 0;
         
     }
 
@@ -546,12 +588,13 @@ section.benefits {
         width: 190PX;
         height: 190PX;
         border-radius: 50%;
-        margin: 0 0 10px 0;
+        margin: 0 0 41px 0;
     }
 
     /* BENEFITS */
     .benefits [class^="col-"]{
         flex-basis: 100%;
+        margin: 0 20px;
     }
 
     .benefits .row {
@@ -559,6 +602,13 @@ section.benefits {
         align-items: center;
         gap: 22px;
         padding-bottom: 40px;
+    }
+
+    .button-more-benefits {
+        padding: 15px;
+        border-radius: 26px;
+        margin: 15px 0 9px 6px;
+        font-size: 16px;
     }
 
     /* ABOUT US */
